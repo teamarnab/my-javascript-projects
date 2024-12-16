@@ -18,9 +18,10 @@ This is a simple To-Do List application built using HTML, CSS, Node.js, Express.
 
 1. Clone the repository: git clone https://github.com/teamarnab/my-javascript-projects/tree/main/To%20Do%20List%20app
 2. Navigate to the project directory: cd todo-list-app
-3. Install the required dependencies: npm install express ejs 
-4. Start the server: On terminal type: node app.js
-5. Open your browser and go to `http://localhost:3000` to view the app.
+3. Create a new folder by the name "tasks": mkdir tasks
+4. Install the required dependencies: npm install express ejs 
+5. Start the server: On terminal type: node app.js
+6. Open your browser and go to `http://localhost:3000` to view the app.
 
 ## Usage
 1. Add new tasks to the list by typing in the input field and clicking the "Add" button.
