@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/task-data.css" />
+    <title>To-Do-List</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main">
+        <% let task_name_list = task_name.split("."); %>
+        <div class="header">
+          <h1><%= task_name_list[0] %></h1>
+          <span class="btns">
+            <a href="/"><span class="home-btn">Go to home</span></a>
+
+            <a href="/delete/<%= task_name %>"
+              ><span class="delete-btn">Delete Task</span></a
+            >
+          </span>
+        </div>
+        <div class="task-det"><%= taskdata %></div>
+      </div>
+    </div>
+  </body>
+</html>

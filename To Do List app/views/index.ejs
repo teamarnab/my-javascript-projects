@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <title>To-Do-List</title>
+  </head>
+  <body>
+    <div class="container">
+      <header><h1>To-Do-List</h1></header>
+      <div class="main">
+        <div class="left-section">
+          <form action="/submit" method="post">
+            <div class="input-div">
+              Task Title
+              <input
+                type="text"
+                placeholder="Task title goes here"
+                name="task-title"
+              />
+            </div>
+            <div class="input-div">
+              Task Details
+              <textarea
+                name="task-details"
+                placeholder="Task detais goes here"
+              ></textarea>
+            </div>
+            <div class="input-div">
+              <input type="submit" value="Crete Task" class="submit-btn" />
+            </div>
+          </form>
+        </div>
+        <div class="right-section">
+          <% if(tasks.length>0){ %> 
+            <% tasks.forEach((task)=>{ %>
+              <% let arr = task.split(".") %>
+              <% let item = arr[0] %>
+              <div class="tast-template">
+                <div class="title"><%= item %></div>
+                <div class="links">
+                  <a href="/task-details/<%= task %>">see more...</a>
+                </div>
+              </div>
+          <%})%> <%} else { %>
+          <h3>Not tasks yet</h3>
+          <% } %>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
