@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*----HEADER SECTION----*/
+
+/*----Header Container----*/
+#header{
+    width: 100%;
+    height: 300px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*----Section that will display the amount----*/
+#display_text {
+    width: 100%;
+    text-align: center;
+    padding: 50px;
+    box-shadow: 2px 2px 10px gray;
+}
+
+/*----BUTTON SECTION----*/
+
+/*----Buttons Section Container----*/
+#button-section{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*----Buttons Container----*/
+#by-one, #by-ten, #by-hundred {
+    margin: auto 50px;
+    box-shadow: 2px 2px 6px gray;
+}
+/*----Increase-Decrease Buttons-Section----*/
+#buttons {
+    display: flex;
+    flex-direction: row;
+}
+/*----Individual Buttons (All)----*/
+.btn {
+    font-size: 20px;
+    width: 80px;
+    height: 40px;
+    margin: 50px 35px;
+    border: none;
+    font-weight: bold;
+    box-shadow: 2px 2px 8px gray;
+}
+/*----Increase Button----*/
+#increase_by_one, #increase_by_ten, #increase_by_hundred {
+    background-color: greenyellow;
+    box-shadow: 2px 2px 6px green;
+}
+/*----Decrease Button----*/
+#decrease_by_one, #decrease_by_ten, #decrease_by_hundred {
+    background-color: rgba(255, 68, 0, 0.616);
+    box-shadow: 2px 2px 6px gray;
+}
+/*----Reset Button----*/
+#reset {
+    border: none;
+    background-color: rgba(128, 128, 128, 0.11);
+}
